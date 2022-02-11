@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Произведение искусства</title>
+</head>
+<body>
+<div class="block"></div>
+<div class="neskolko_granic"><img class="img" src="https://media.discordapp.net/attachments/772164370406965271/917486632196796456/IMG_7142.png?width=440&height=587">
+</div>
+<p class="text"> "" <br><a style="text-decoration: none;" class="text1" href="https://vk.com/id218520312">(Іван Журнeнка)</a> <br>(2022) </p>
+  <style>
+  body{
+background-repeat: no-repeat;
+    background: linear-gradient(-45deg, #1867a3, #1cd517, #c1061b, #d2e33a);
+height: 135vh;
+  }
+  .img{
+    height: 700px;
+    width: 500px;
+    display: block;
+margin-left: auto;
+    margin-right: auto;
+
+  }
+
+
+  .neskolko_granic {
+    width: 500px;
+    height: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  /*  position: relative; */
+    border: 10px solid orange;
+    animation: text-shadow1 15s linear infinite;
+  }
+  .neskolko_granic:after, .neskolko_granic:before {
+    content: '';
+    position: absolute;
+  /*  top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; */
+  }
+  .neskolko_granic:after {
+    border: 5px solid red;
+    outline: 5px solid yellow;
+  }
+  .neskolko_granic:before {
+    border: 10px solid green;
+  }
+
+  .block{
+    position: relative;
+    top: 750px;
+
+
+    width: 100px;
+    height:5px;
+    margin:auto;
+    background-color: #ffd500;
+    animation: anim1 15s linear infinite;
+    border: 5px solid #fd5101;
+  }
+  @keyframes anim1{
+    25%{
+      background-color: #ef1932;
+      transform: translateX(300px)
+    }
+    50%{
+      background-color: #ef1932;
+      transform: translateX(-300px)
+    }
+  }
+  .text1{
+    text-align: center;
+    font-size: 150%;
+color: wheat;
+    animation: text-shadow 3s alternate infinite;
+  }
+  .text{
+    text-align: center;
+    font-size: 250%;
+    color: wheat;
+    animation: text-shadow 3s alternate infinite;
+  }
+  @keyframes text-shadow {
+    from {
+      text-shadow: 0px 0px 0px #000000,
+      0px 0px 0px #000000,
+      0px 0px 0px #000000;
+    }
+    to {
+      text-shadow: 4px 4px 10px #000000,
+      5px 5px 75px #fa5928,
+      -5px -5px 75px #fa5928;
+    }
+  }
+
+
+  @keyframes text-shadow1 {
+    from {
+      text-shadow: 0px 0px 0px #000000,
+      0px 0px 0px #000000,
+      0px 0px 0px #000000;
+    }
+    to {
+      text-shadow: 4px 4px 10px #000000,
+      5px 5px 75px #fa5928,
+      -5px -5px 75px #fa5928;
+    }
+  }
+  .text1:hover {
+    tranform: scale(1.2);
+    cursor: pointer;
+    color: yellow ;
+  }
+</style>
+</body>
+</html>
